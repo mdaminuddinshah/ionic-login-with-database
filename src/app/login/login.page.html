@@ -1,0 +1,53 @@
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col offset="3" size="6" class="ion-text-center">
+        <img 
+        style="border: 1px solid black"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/SandCat12.jpg/1200px-SandCat12.jpg"
+        alt="logo"
+        class="logo"
+        /> 
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-input 
+        placeholder="email"
+        [(ngModel)]="email"
+        fill="outline"
+        type="text"
+        >
+        </ion-input>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-input 
+        placeholder="password"
+        fill="outline"
+        [(ngModel)]="password"
+        type="password"
+        >
+        </ion-input>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-button expand="block" color="secondary" (click)="signIn()">Login</ion-button>
+
+  <!-- register part -->
+  <ion-button routerLink="/register" routerDirection="forward" expand="block" color="dark">Register</ion-button>
+
+  <!-- registerII part -->
+  <ion-button routerLink="/register-ii" routerDirection="forward" expand="block" color="warning">RegisterII</ion-button>
+
+  <!-- register3 part -->
+  <ion-button expand="block" routerLink="/register3" routerDirection="forward" color="primary">register</ion-button>
+
+  <!-- register part 4 -->
+  <ion-button expand="block" color="secondary" routerLink="/register4" routerDirection="forward">register</ion-button>
+<!-- part 5 register -->
+  <ion-button color="warning" expand="block" routerLink="/register5" routerDirection="forward">Register5</ion-button>
+</ion-content>

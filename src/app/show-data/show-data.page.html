@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Show Data</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item *ngFor="let item of theData;" (click)="gotodetails(item.id)"> 
+      <ion-icon name="bug-outline" slot="start"></ion-icon>
+      <ion-text>
+        <h2>
+          {{item.ticket_no}}
+        </h2>
+        <p>created at: {{item.created_at}}</p>
+        <p>type: {{item.type__Vals}}</p>
+        <p>status: {{item.status__Vals}}</p>
+        <p>priority: {{item.priority__Vals}}</p>
+      </ion-text>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<!-- "ticket_no": "TICKET\/1702910342",
+            "created_at": "18\/12\/2023",
+            let i = index;
+            "type__Vals": "Bug",
+            "status__Vals": "Open",
+            "priority__Vals": "Low", -->
