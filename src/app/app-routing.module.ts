@@ -26,23 +26,8 @@ const routes: Routes = [
   {
     path: 'show-data-details/:id',
     loadChildren: () => import('./show-data-details/show-data-details.module').then( m => m.ShowDataDetailsPageModule)
-  },
-  {
-    path: 'register-ii',
-    loadChildren: () => import('./register-ii/register-ii.module').then( m => m.RegisterIIPageModule)
-  },
-  {
-    path: 'register3',
-    loadChildren: () => import('./register3/register3.module').then( m => m.Register3PageModule)
-  },
-  {
-    path: 'register4',
-    loadChildren: () => import('./register4/register4.module').then( m => m.Register4PageModule)
-  },
-  {
-    path: 'register5',
-    loadChildren: () => import('./register5/register5.module').then( m => m.Register5PageModule)
   }
+  
 ];
 
 @NgModule({
